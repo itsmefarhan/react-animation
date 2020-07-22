@@ -21,3 +21,9 @@ ul.MuiList-root.MuiList-padding {
 #contact {
   background-image: linear-gradient(to right, #262621, #30302e);
 }
+
+@media only screen and (max-width: 599px) {
+  .mq {
+    text-align: center;
+  }
+}

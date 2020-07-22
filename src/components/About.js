@@ -1,7 +1,8 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, Grid, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
+import AboutImg from "../images/about.jpg";
 
 const useStyles = makeStyles(() => ({
   head: {
@@ -9,9 +10,12 @@ const useStyles = makeStyles(() => ({
     color: "white",
   },
   typo: {
-    color: "white",
-    width: "70%",
-    margin: "auto",
+    color: "white",    
+    paddingTop: "30px",
+  },
+  img: {
+    width: "100%",
+    height: "450px",
     paddingTop: "30px",
   },
 }));
@@ -41,27 +45,33 @@ const About = () => {
       >
         About Us
       </Typography>
-      <Typography variant="h6" className={classes.typo}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-        atque ab. Omnis dicta saepe officia perspiciatis expedita! Fugiat
-        expedita alias laboriosam ullam reiciendis vel quae at, odio
-        exercitationem reprehenderit animi. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit.
-      </Typography>
-      <Typography variant="h6" className={classes.typo}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-        atque ab. Omnis dicta saepe officia perspiciatis expedita! Fugiat
-        expedita alias laboriosam ullam reiciendis vel quae at, odio
-        exercitationem reprehenderit animi.
-      </Typography>
-      <Typography
-        variant="h6"
-        className={classes.typo}
-        style={{ paddingBottom: "10px" }}
-      >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-        atque ab. Omnis dicta saepe officia perspiciatis expedita!
-      </Typography>
+      <Container>
+      <Grid container>
+        <Grid item xs={12} sm={1}/>
+        <Grid item xs={12} sm={5}>
+          <img src={AboutImg} alt="" className={classes.img} />
+        </Grid>
+        <Grid item xs={12} sm={1}/>
+        
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6" className={classes.typo}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+            atque ab. Omnis dicta saepe officia perspiciatis expedita! Fugiat
+            expedita alias laboriosam ullam reiciendis vel quae at, odio
+            exercitationem reprehenderit animi. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </Typography>
+          <Typography variant="h6" className={classes.typo} style={{ paddingBottom: "10px" }}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+            atque ab. Omnis dicta saepe officia perspiciatis expedita! Fugiat
+            expedita alias laboriosam ullam reiciendis vel quae at, odio
+            exercitationem reprehenderit animi.
+          </Typography>
+          
+        </Grid>
+        
+      </Grid>
+      </Container>
     </div>
   );
 };

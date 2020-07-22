@@ -33,7 +33,7 @@ const ServicesUI = () => {
     <Grid container style={{ paddingTop: "20px" }}>
       <Grid item xs={12} sm={5}>
         <div className="target" ref={ref}>
-          <img src={BackendImg} className={classes.img} />
+          <img src={BackendImg} className={classes.img} alt="" />
         </div>
       </Grid>
       <Grid item xs={12} sm={1} />

@@ -27,8 +27,8 @@ const Contact = () => {
       <Typography variant="h4" align="center" className={classes.head}>
         The Developers
       </Typography>
-      <Grid container>
-        <Grid xs={12} sm={2} />
+      <Grid container className='mq'>
+        <Grid item xs={12} sm={2} />
         <Grid item xs={12} sm={1}>
           <CallIcon className={classes.icon} />
         </Grid>
@@ -51,7 +51,7 @@ const Contact = () => {
           <LinkedInIcon color="primary" />
         </Grid>
         <Grid item xs={12} sm={1}></Grid>
-        <Grid xs={12} sm={2} />
+        <Grid item xs={12} sm={2} />
       </Grid>
       <div
         style={{

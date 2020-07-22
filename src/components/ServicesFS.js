@@ -47,7 +47,7 @@ const ServicesUI = () => {
       <Grid item xs={12} sm={1} />
       <Grid item xs={12} sm={5}>
         <div className="target" ref={ref}>
-          <img src={FullstackImg} className={classes.img} />
+          <img src={FullstackImg} className={classes.img} alt="" />
         </div>
       </Grid>
     </Grid>
