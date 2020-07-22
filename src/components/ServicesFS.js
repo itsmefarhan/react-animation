@@ -24,7 +24,6 @@ const ServicesUI = () => {
     timing: {
       ...timing,
       delay: 500,
-      //   direction: "reverse",
       iterations: Infinity,
       duration: timing.duration * 3,
       easing: "ease-in-out",
