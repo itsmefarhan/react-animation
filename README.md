@@ -1,8 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React Animation
 
-## Available Scripts
-
-In the project directory, you can run:
+This is project 5 of bootcamp. 
+Application is deployed on [surge](https://the-react-animation.surge.sh)
 
 ### `npm start`
 

@@ -6,7 +6,12 @@ import ServicesFS from "./ServicesFS";
 
 const Services = () => {
   return (
-    <div id="services" style={{ background: "#f7e3a6", paddingBottom:'2px' }}>
+    <div
+      id="services"
+      style={{
+        paddingBottom: "2px",
+      }}
+    >
       <Container>
         <ServicesUI />
         <ServicesReact />

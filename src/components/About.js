@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import useWebAnimations, { rollIn } from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
 
 const useStyles = makeStyles(() => ({
   head: {
@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
 const About = () => {
   const classes = useStyles();
 
-  const { keyframes, timing } = rollIn;
+  const { keyframes, timing } = fadeIn;
 
   const { ref } = useWebAnimations({
     keyframes,
@@ -32,7 +32,7 @@ const About = () => {
   });
 
   return (
-    <div id="about" style={{ background: "#444" }}>
+    <div id="about">
       <Typography
         variant="h3"
         align="center"
@@ -54,7 +54,11 @@ const About = () => {
         expedita alias laboriosam ullam reiciendis vel quae at, odio
         exercitationem reprehenderit animi.
       </Typography>
-      <Typography variant="h6" className={classes.typo}>
+      <Typography
+        variant="h6"
+        className={classes.typo}
+        style={{ paddingBottom: "10px" }}
+      >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
         atque ab. Omnis dicta saepe officia perspiciatis expedita!
       </Typography>
