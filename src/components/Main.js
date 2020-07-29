@@ -53,7 +53,7 @@ const Main = () => {
   return (
     <div className={classes.img}>
       <h1 className={classes.centered} ref={ref}>
-        One Stop Solution to your programming needs.
+        One Stop Solution to your programming needs..!
       </h1>
       <Link href="#services">
         <ExpandMoreIcon className={classes.myIcon} />
