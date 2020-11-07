@@ -63,7 +63,7 @@ const Contact = () => {
         }}
       >
         <Typography style={{ textAlign: "center", flex: 1 }}>
-          Powered by Farhan Farooq © 2020
+          Powered by Farhan Farooq © {new Date().getFullYear()}
         </Typography>
       </div>
     </div>
